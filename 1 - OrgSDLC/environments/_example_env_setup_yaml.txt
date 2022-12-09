@@ -1,0 +1,70 @@
+<<<<<<< HEAD
+# Scalr Ignite - Quick Start Demo for Scalr
+# Copyright (C) 2022 Sierra-Cedar
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+# Contact: devops@sierra-cedar.com
+
+- name: Your Environment Name
+  secmaps:
+  - roles:                            # This security map is under the Environment Name, and controls access at the Environment Scope
+    - Role1-to-assign-to-team         # These Roles MUST be defined in ./iam/roles.yaml - Scalr Ignite does not currently look for pre-existing Roles
+    - Role2-to-assign-to-team
+    - RoleN-to-assign-to-team
+    team: Team-to-be-granted-access   # This Team MUST be defined in ./iam/teams.yaml - Scalr Ignite does not currently look for pre-existing Teams
+  workspaces:
+  - name: Your-Workspace-Name             # Spaces are not allowed in the Workspace Name - use - or _ instead!
+    secmaps:                              # This secmap is under the Workspace Name, and controls access at the Workspace Scope
+    - roles:
+      - Ignite-Workspace-Admin-Role       # This Role MUST be defined in ./iam/roles.yaml - Scalr Ignite does not currently look for pre-existing Roles
+      team: Ignite-Security-Admin-Team    # This Team MUST be defined in ./iam/teams.yaml - Scalr Ignite does not currently look for pre-existing Teams
+    - roles:
+      - Ignite-Workspace-ReadOnly-Role    # This Role MUST be defined in ./iam/roles.yaml - Scalr Ignite does not currently look for pre-existing Roles
+=======
+# Scalr Ignite - Quick Start Demo for Scalr
+# Copyright (C) 2022 Sierra-Cedar
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+# Contact: devops@sierra-cedar.com
+
+- name: Your Environment Name
+  secmaps:
+  - roles:                            # This security map is under the Environment Name, and controls access at the Environment Scope
+    - Role1-to-assign-to-team         # These Roles MUST be defined in ./iam/roles.yaml - Scalr Ignite does not currently look for pre-existing Roles
+    - Role2-to-assign-to-team
+    - RoleN-to-assign-to-team
+    team: Team-to-be-granted-access   # This Team MUST be defined in ./iam/teams.yaml - Scalr Ignite does not currently look for pre-existing Teams
+  workspaces:
+  - name: Your-Workspace-Name             # Spaces are not allowed in the Workspace Name - use - or _ instead!
+    secmaps:                              # This secmap is under the Workspace Name, and controls access at the Workspace Scope
+    - roles:
+      - Ignite-Workspace-Admin-Role       # This Role MUST be defined in ./iam/roles.yaml - Scalr Ignite does not currently look for pre-existing Roles
+      team: Ignite-Security-Admin-Team    # This Team MUST be defined in ./iam/teams.yaml - Scalr Ignite does not currently look for pre-existing Teams
+    - roles:
+      - Ignite-Workspace-ReadOnly-Role    # This Role MUST be defined in ./iam/roles.yaml - Scalr Ignite does not currently look for pre-existing Roles
+>>>>>>> 13adf27b2b3680729b40a689879de6234951d81d
+      team: Ignite-CCOE-Admin-Team        # This Team MUST be defined in ./iam/teams.yaml - Scalr Ignite does not currently look for pre-existing Teams

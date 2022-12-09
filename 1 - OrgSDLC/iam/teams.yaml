@@ -1,0 +1,101 @@
+<<<<<<< HEAD
+# Scalr Ignite - Quick Start Demo for Scalr
+# Copyright (C) 2022 Sierra-Cedar
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+# Contact: devops@sierra-cedar.com
+
+#################################################################################################################
+# USAGE                                                                                                         #
+#################################################################################################################
+# Teams are logical groups of people in Scalr.  People may belong to more than one team.                        #
+#                                                                                                               #
+# Teams are the "who is allowed to do this" in security, whereas Roles (iam/roles.yaml) are the "what are they  #
+# allowed to do". Access policies (defined in environments/*.yaml as part of the environment definition) tie    #
+# the Team and Role to a context, such as one or more environments or workspaces.                               #
+#################################################################################################################
+
+#################################################################################################################
+# STRUCTURE                                                                                                     #
+#################################################################################################################
+#
+# - name: TEAM_NAME
+#   description: a short description of the team's purpose 
+
+- name: Ignite-Security-Admin-Team
+  description: Security Team with full access to their environment, plus access to the 000-Security Workspace in each Environment
+- name: Ignite-HR-Admin-Team
+  description: HR Department Administrator with access to all HR resources
+- name: Ignite-Finance-Admin-Team
+  description: Finance Department Administrator with access to all Finance resources
+- name: Ignite-CCOE-Admin-Team
+  description: CCOE Department Administrator with access to all CCOE resources, plus access to Network and Compliance workspaces in every Environment
+- name: Ignite-Marketing-Admin-Team
+  description: Marketing Department Administrator with access to all Marketing resources
+- name: Ignite-Manufacturing-Admin-Team
+  description: Manufacturing Department Administrator with access to all Manufacturing resources
+- name: Ignite-Lab-Admin-Team
+  description: Scalr/CSP Lab Administrator with access to all Lab resources
+=======
+# Scalr Ignite - Quick Start Demo for Scalr
+# Copyright (C) 2022 Sierra-Cedar
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+# Contact: devops@sierra-cedar.com
+
+#################################################################################################################
+# USAGE                                                                                                         #
+#################################################################################################################
+# Teams are logical groups of people in Scalr.  People may belong to more than one team.                        #
+#                                                                                                               #
+# Teams are the "who is allowed to do this" in security, whereas Roles (iam/roles.yaml) are the "what are they  #
+# allowed to do". Access policies (defined in environments/*.yaml as part of the environment definition) tie    #
+# the Team and Role to a context, such as one or more environments or workspaces.                               #
+#################################################################################################################
+
+#################################################################################################################
+# STRUCTURE                                                                                                     #
+#################################################################################################################
+#
+# - name: TEAM_NAME
+#   description: a short description of the team's purpose 
+
+- name: Ignite-Security-Admin-Team
+  description: Security Team with full access to their environment, plus access to the 000-Security Workspace in each Environment
+- name: Ignite-HR-Admin-Team
+  description: HR Department Administrator with access to all HR resources
+- name: Ignite-Finance-Admin-Team
+  description: Finance Department Administrator with access to all Finance resources
+- name: Ignite-CCOE-Admin-Team
+  description: CCOE Department Administrator with access to all CCOE resources, plus access to Network and Compliance workspaces in every Environment
+- name: Ignite-Marketing-Admin-Team
+  description: Marketing Department Administrator with access to all Marketing resources
+- name: Ignite-Manufacturing-Admin-Team
+  description: Manufacturing Department Administrator with access to all Manufacturing resources
+- name: Ignite-Lab-Admin-Team
+  description: Scalr/CSP Lab Administrator with access to all Lab resources
+>>>>>>> 13adf27b2b3680729b40a689879de6234951d81d

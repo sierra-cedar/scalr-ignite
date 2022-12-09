@@ -1,0 +1,142 @@
+<<<<<<< HEAD
+# Scalr Ignite - Quick Start Demo for Scalr
+# Copyright (C) 2022 Sierra-Cedar
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+# Contact: devops@sierra-cedar.com
+
+#################################################################################################################
+# USAGE                                                                                                         #
+#################################################################################################################
+# This file is used to create Scalr Roles and map them to a set of permissions                                  #
+# (defined in iam/permissions.yaml)                                                                             #
+#                                                                                                               #
+# Teams (iam/teams.yaml) are the "who is allowed to do this" in security, whereas Roles (iam/roles.yaml) are    #
+# the "what are they allowed to do". Access policies (defined in environments/*.yaml as part of the environment #
+# definition) tie the Team and Role to a context, such as one or more environments or workspaces.               #
+#################################################################################################################
+
+#################################################################################################################
+# STRUCTURE                                                                                                     #
+#################################################################################################################
+#
+# - name: ROLE_NAME
+#   description: A simple description of the role's purpose
+#   permissions:
+#   - perm1    # These permissions MUST be defined in iam/permissions.yaml
+#   - perm2
+#   - permN
+
+- name: Ignite-Environment-Admin-Role
+  description: Read/Write access to all resources in the Environment
+  permissions:
+  - base
+  - wsadmin
+- name: Ignite-Environment-ReadOnly-Role
+  description: Read Only access to all resources in the Environment
+  permissions:
+  - base
+  - envread
+- name: Ignite-Workspace-Admin-Role
+  description: Read/Write access to all resources in the Workspace
+  permissions:
+  - base
+  - wsadmin
+- name: Ignite-Workspace-ReadOnly-Role
+  description: ReadOnly access to all resources in the Workspace
+  permissions:
+  - base
+  - wsread
+- name: Ignite-Security-Admin-Role
+  description: Administrative access to roles, teams, and access policies
+  permissions:
+  - base
+  - secadmin
+- name: Ignite-Scalr-Integration-Admin-Role
+  description: Administrative access to roles, teams, and access policies
+  permissions:
+  - base
+=======
+# Scalr Ignite - Quick Start Demo for Scalr
+# Copyright (C) 2022 Sierra-Cedar
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+# Contact: devops@sierra-cedar.com
+
+#################################################################################################################
+# USAGE                                                                                                         #
+#################################################################################################################
+# This file is used to create Scalr Roles and map them to a set of permissions                                  #
+# (defined in iam/permissions.yaml)                                                                             #
+#                                                                                                               #
+# Teams (iam/teams.yaml) are the "who is allowed to do this" in security, whereas Roles (iam/roles.yaml) are    #
+# the "what are they allowed to do". Access policies (defined in environments/*.yaml as part of the environment #
+# definition) tie the Team and Role to a context, such as one or more environments or workspaces.               #
+#################################################################################################################
+
+#################################################################################################################
+# STRUCTURE                                                                                                     #
+#################################################################################################################
+#
+# - name: ROLE_NAME
+#   description: A simple description of the role's purpose
+#   permissions:
+#   - perm1    # These permissions MUST be defined in iam/permissions.yaml
+#   - perm2
+#   - permN
+
+- name: Ignite-Environment-Admin-Role
+  description: Read/Write access to all resources in the Environment
+  permissions:
+  - base
+  - wsadmin
+- name: Ignite-Environment-ReadOnly-Role
+  description: Read Only access to all resources in the Environment
+  permissions:
+  - base
+  - envread
+- name: Ignite-Workspace-Admin-Role
+  description: Read/Write access to all resources in the Workspace
+  permissions:
+  - base
+  - wsadmin
+- name: Ignite-Workspace-ReadOnly-Role
+  description: ReadOnly access to all resources in the Workspace
+  permissions:
+  - base
+  - wsread
+- name: Ignite-Security-Admin-Role
+  description: Administrative access to roles, teams, and access policies
+  permissions:
+  - base
+  - secadmin
+- name: Ignite-Scalr-Integration-Admin-Role
+  description: Administrative access to roles, teams, and access policies
+  permissions:
+  - base
+>>>>>>> 13adf27b2b3680729b40a689879de6234951d81d
+  - devadmin
