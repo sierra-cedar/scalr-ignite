@@ -1,6 +1,10 @@
 # scalr-ignite
 
-<img src="/images/scc-logo.jpg"  width="50%" height="50%">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="/images/scc-logo-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="/images/scc-logo-light.png">
+  <img alt="Shows a black logo in light color mode and a white one in dark color mode." src="/images/scc-logo-light.png" width="50%" height="50%">
+</picture>
 
 ## [Sierra-Cedar DevOps Services](https://www.sierra-cedar.com/devops) help you effectively operate at scale in your Cloud Service Provider(s).  Sierra-Cedar is a [Scalr](https://scalr.com) partner.  Check out our [FlexOps](https://www.sierra-cedar.com/devops-services/) framework for getting your [Terraform](https://www.terraform.io/) code, version control, CI/CD, and cloud infrastructure under control!
 
@@ -128,7 +132,7 @@ Congratulations - you have deployed the Ignite template in Scalr!
 
 
 
-*If you want to learn more about [Sierra-Cedar DevOps](https://www.sierra-cedar.com/devops) Services, please visit our website at https://www.sierra-cedar.com/devops-services/*
+*If you want to learn more about [Sierra-Cedar DevOps](https://www.sierra-cedar.com/devops) Services, please visit our website at https://www.sierra-cedar.com/devops-services/, or contact us at [devops@sierra-cedar.com](mailto:devops@sierra-cedar.com?subject=[Github.Scalr-Ignite]%20Tell%20Me%20More!)*
 
 
 Copyright (C) 2022 - Sierra-Cedar
