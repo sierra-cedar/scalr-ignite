@@ -105,6 +105,7 @@ base:
 2. Collect Scalr information:
    1. ACCOUNT_ID     -> Found on the Scalr Account Dashboard (Green Menu Context)
    2. URL            -> Your personalized URL to access Scalr (your-account.scalr.io), including the .scalr.io
+   3. ENVIRONMENT    -> If you still have the Scalr default "Environment A", scalr-ignite will use that by default and you don't need to do anything. If you deleted Environment A, you will need to create a new environment, attach a Scalr Administrative provider configuration to it, and update vars.tf with the name of your environment.  
 
 2. Install Terraform v1.1.4 or later (earlier releases may work, but are not tested or supported)
 
@@ -124,7 +125,7 @@ base:
 8. Run a **terraform plan**. 
    1. The terraform plan will provide a link to access the "dry run" in Scalr.  
    2. Output from the run will also be shown locally.  
-   3. If successful, continue to step 7.  If there is a failure, double check that you edited the **_UPDATE_ME_** files appropriately.  
+   3. If successful, continue to step 9.  If there is a failure, double check that you edited the **_UPDATE_ME_** files appropriately. 
 
 9. Run a **terraform apply**.  
 
